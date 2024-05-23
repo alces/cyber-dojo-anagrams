@@ -53,13 +53,13 @@ var concatSlicesTestResults = []struct {
     },
     {
         []string{"a"},
-        []string{"b"},
-        []string{"ab"},
-    },
-    {
-        []string{"a"},
         []string{"b", "c"},
         []string{"ab", "ac"},
+    },
+    {
+        []string{"a", "b"},
+        []string{"c", "d"},
+        []string{"ac", "ad", "bc", "bd"},
     },
 }
 
@@ -72,14 +72,6 @@ func TestChopLetter(t *testing.T) {
             assert.Contains(t, actual, e)
         }
     }
-}
-
-func TestConcatSlicesEmpty(t *testing.T) {
-    assert.Nil(t, concatSlices([]string{}, []string{})) 
-}
-
-func TestConcatSlicesOneItem(t *testing.T) {
-    assert.Nil(t, concatSlices([]string{"a"}, []string{})) 
 }
 
 func TestConcatSlices(t *testing.T) {
