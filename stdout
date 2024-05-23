@@ -1,19 +1,19 @@
---- FAIL: TestAnagramsOneChar (0.00s)
-    anagrams_test.go:13: 
-        	Error Trace:	anagrams_test.go:13
+--- FAIL: TestAnagramsEmptyString (0.00s)
+    anagrams_test.go:9: 
+        	Error Trace:	anagrams_test.go:9
         	Error:      	Not equal: 
-        	            	expected: []string{"a"}
-        	            	actual  : []string{}
+        	            	expected: []string{}
+        	            	actual  : []string(nil)
         	            	
         	            	Diff:
         	            	--- Expected
         	            	+++ Actual
         	            	@@ -1,3 +1,2 @@
-        	            	-([]string) (len=1) {
-        	            	- (string) (len=1) "a"
-        	            	+([]string) {
-        	            	 }
-        	Test:       	TestAnagramsOneChar
+        	            	-([]string) {
+        	            	-}
+        	            	+([]string) <nil>
+        	            	 
+        	Test:       	TestAnagramsEmptyString
 FAIL
 exit status 1
 FAIL	_/sandbox	0.002s
