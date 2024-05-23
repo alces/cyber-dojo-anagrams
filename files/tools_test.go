@@ -42,6 +42,11 @@ var concatSlicesTestResults = []struct {
     expected []string
 } {
     {
+        nil,
+        nil,
+        nil,
+    },
+    {
         []string{"a"},
         nil,
         nil,
