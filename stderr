@@ -1,0 +1,2 @@
+# _/sandbox
+tools_test.go:32:44: expected '}', found 'EOF'

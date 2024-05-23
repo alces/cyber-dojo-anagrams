@@ -13,8 +13,20 @@ func TestChopLetterOneChar(t *testing.T) {
     expected := []chopped{
         {
             head: "a",
-            tail: "",
+            tail: "b",
+        },
+        {
+            head: "b",
+            tail: "a",
         },
     }
-    assert.Equal(t, expected, chopLetter("a"))
+    
+    actual := chopLetter("ab")
+    assert.Len(t, 2, actual)
+    
+    for _, e := range expected {
+        assert.Contains(t, e, actual)
+    }
 }
+
+func TestChopLetterTwoChars(t *testing.T) {

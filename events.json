@@ -171,5 +171,21 @@
       39,
       217047
     ]
+  },
+  {
+    "duration": 0.66195,
+    "colour": "red",
+    "predicted": "red",
+    "revert_if_wrong": "off",
+    "index": 11,
+    "time": [
+      2024,
+      5,
+      23,
+      8,
+      26,
+      9,
+      462055
+    ]
   }
 ]
