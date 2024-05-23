@@ -72,3 +72,12 @@ func TestConcatSlicesOneItem(t *testing.T) {
     assert.Nil(t, concatSlices([]string{"a"}, []string{})) 
 }
 
+func TestConcatSlicesTwoItems(t *testing.T) {
+    expected := []string{"ab"}
+    actual := concatSlices([]string{"a"}, []string{"b"})
+    
+    assert.Len(t, actual, len(expected))
+    for _, e := range expected {
+        assert.Contains(t, actual, e)
+    }
+}
