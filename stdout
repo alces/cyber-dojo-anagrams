@@ -1,16 +1,8 @@
 --- FAIL: TestChopLetterTwoChars (0.00s)
-    tools_test.go:36: 
-        	Error Trace:	tools_test.go:36
-        	Error:      	"[]" should have 2 item(s), but has 0
-        	Test:       	TestChopLetterTwoChars
     tools_test.go:39: 
         	Error Trace:	tools_test.go:39
-        	Error:      	[]anagrams.chopped(nil) does not contain anagrams.chopped{head:"a", tail:"b"}
-        	Test:       	TestChopLetterTwoChars
-    tools_test.go:39: 
-        	Error Trace:	tools_test.go:39
-        	Error:      	[]anagrams.chopped(nil) does not contain anagrams.chopped{head:"b", tail:"a"}
+        	Error:      	[]anagrams.chopped{anagrams.chopped{head:"a", tail:"b"}, anagrams.chopped{head:"a", tail:"a"}} does not contain anagrams.chopped{head:"b", tail:"a"}
         	Test:       	TestChopLetterTwoChars
 FAIL
 exit status 1
-FAIL	_/sandbox	0.003s
+FAIL	_/sandbox	0.002s
