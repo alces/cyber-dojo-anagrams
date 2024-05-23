@@ -12,7 +12,9 @@ func chopLetter(word string) (result []chopped) {
     
     if len(word) == 1 {
         return []chopped{
-            head: word,
+            {
+                head: word,
+            }
         }
     }
 
