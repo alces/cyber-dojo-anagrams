@@ -1,5 +1,0 @@
-# _/sandbox [_/sandbox.test]
-./tools.go:4:12: undefined: head
-./tools.go:5:5: string redeclared
-	./tools.go:4:5: other declaration of string
-./tools.go:5:12: undefined: tail

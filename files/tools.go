@@ -1,8 +1,8 @@
 package anagrams
 
 type chopped struct {
-    string head
-    string tail
+    head string
+    tail string
 }
 
 func chopLetter(word string) (result []chopped) {
