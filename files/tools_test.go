@@ -10,6 +10,10 @@ var chopLetterTestResults = []struct {
     expected []chopped
 } {
     {
+        argument: "",
+        expected: nil,
+    },
+    {
         argument: "a",
         expected: []chopped{
             {
