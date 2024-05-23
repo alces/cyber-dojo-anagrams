@@ -5,11 +5,7 @@ type chopped struct {
     tail string
 }
 
-func chopLetter(word string) (result []chopped) {
-    if len(word) == 0 {
-        return
-    }
-
+func chopLetter(word string) (result []chopped) { 
     for i := 0; i < len(word); i++ {
         result = append(result, chopped{string(word[i]), word[:i] + word[i+1:]})
     }    
