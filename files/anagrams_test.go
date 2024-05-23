@@ -6,7 +6,7 @@ import (
 )
 
 func TestAnagramsEmptyString(t *testing.T) {
-    assert.Equal(t, []string{}, anagrams(""))
+    assert.Nil(t, anagrams(""))
 }
 
 func TestAnagramsOneChar(t *testing.T) {
