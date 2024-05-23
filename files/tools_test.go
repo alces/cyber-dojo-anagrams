@@ -36,6 +36,23 @@ var chopLetterTestResults = []struct {
     },
 }
 
+var concatSlicesTestResults = []struct {
+    first    []string
+    second   []string
+    expected []string
+} {
+    {
+        []string{"a"},
+        []string{"b"},
+        []string{"ab"},
+    },
+    {
+        []string{"a"},
+        []string{"b", "c"},
+        []string{"ab", "ac"},
+    },
+}
+
 func TestChopLetter(t *testing.T) {
     for _, res := range chopLetterTestResults {
         actual := chopLetter(res.argument)
@@ -55,23 +72,13 @@ func TestConcatSlicesOneItem(t *testing.T) {
     assert.Nil(t, concatSlices([]string{"a"}, []string{})) 
 }
 
-func TestConcatSlicesTwoItems(t *testing.T) {
-    expected := []string{"ab"}
-    actual := concatSlices([]string{"a"}, []string{"b"})
-    
-    assert.Len(t, actual, len(expected))
-    for _, e := range expected {
-        assert.Contains(t, actual, e)
+func TestConcatSlices(t *testing.T) {
+    for _, res := range concatSlicesTestResults {
+        actual := concatSlices(res.first, res.second)
+        assert.Len(t, actual, len(res.expected))
+        
+        for _, e := range res.expected {
+            assert.Contains(t, actual, e)
+        }
     }
 }
-
-func TestConcatSlicesThreeItems(t *testing.T) {
-    expected := []string{"ab", "ac"}
-    actual := concatSlices([]string{"a"}, []string{"b", "c"})
-    
-    assert.Len(t, actual, len(expected))
-    for _, e := range expected {
-        assert.Contains(t, actual, e)
-    }
-}
-
