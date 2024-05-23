@@ -41,7 +41,7 @@ func TestChopLetterTwoChars(t *testing.T) {
 }
 
 func TestChopLetterThreeChars(t *testing.T) {
-        expected := []chopped{
+    expected := []chopped{
         {
             head: "a",
             tail: "bc",
