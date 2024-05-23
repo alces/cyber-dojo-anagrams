@@ -6,5 +6,15 @@ type chopped struct {
 }
 
 func chopLetter(word string) (result []chopped) {
+    if len(word) == 0 {
+        return
+    }
+    
+    if len(word) == 1 {
+        return []chopped{
+            head: word,
+        }
+    }
+
     return
 }
