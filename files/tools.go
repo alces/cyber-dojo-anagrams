@@ -10,10 +10,6 @@ func chopLetter(word string) (result []chopped) {
         return
     }
     
-    if len(word) == 1 {
-        return []chopped{{head: word}}
-    }
-    
     result = append(result, chopped{string(word[0]), word[1:]})
     
     for i := 1; i < len(word); i++ {
