@@ -9,10 +9,8 @@ func chopLetter(word string) (result []chopped) {
     if len(word) == 0 {
         return
     }
-    
-    result = append(result, chopped{string(word[0]), word[1:]})
-    
-    for i := 1; i < len(word); i++ {
+
+    for i := 0; i < len(word); i++ {
         result = append(result, chopped{string(word[i]), word[:i] + word[i+1:]})
     }    
 
