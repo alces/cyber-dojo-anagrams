@@ -16,40 +16,22 @@ var chopLetterTestResults = []struct {
     {
         argument: "a",
         expected: []chopped{
-            {
-                head: "a",
-                tail: "",
-            },
+            {"a", ""},
         },
     },
     {
         argument: "ab",
         expected: []chopped{
-            {
-                head: "a",
-                tail: "b",
-            },
-            {
-                head: "b",
-                tail: "a",
-            },
+            {"a", "b"},
+            {"b", "a"},
         },
     },
     {
         argument: "abc",
         expected: []chopped{
-            {
-                head: "a",
-                tail: "bc",
-            },
-            {
-                head: "b",
-                tail: "ac",
-            },
-            {
-                head: "c",
-                tail: "ab",
-            },
+            {"a", "bc"},
+            {"b", "ac"},
+            {"c", "ab"},
         },
     },
 }
