@@ -5,11 +5,11 @@
         	Test:       	TestChopLetterTwoChars
     tools_test.go:39: 
         	Error Trace:	tools_test.go:39
-        	Error:      	anagrams.chopped{head:"a", tail:"b"} could not be applied builtin len()
+        	Error:      	[]anagrams.chopped(nil) does not contain anagrams.chopped{head:"a", tail:"b"}
         	Test:       	TestChopLetterTwoChars
     tools_test.go:39: 
         	Error Trace:	tools_test.go:39
-        	Error:      	anagrams.chopped{head:"b", tail:"a"} could not be applied builtin len()
+        	Error:      	[]anagrams.chopped(nil) does not contain anagrams.chopped{head:"b", tail:"a"}
         	Test:       	TestChopLetterTwoChars
 FAIL
 exit status 1
