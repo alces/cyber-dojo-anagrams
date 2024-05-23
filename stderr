@@ -1,5 +1,2 @@
 # _/sandbox [_/sandbox.test]
-./tools_test.go:14:19: missing type in composite literal
-./tools_test.go:23:19: missing type in composite literal
-./tools_test.go:36:19: missing type in composite literal
 ./tools_test.go:62:36: res.actual undefined (type struct{argument string; expected []chopped} has no field or method actual)

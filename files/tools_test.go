@@ -11,7 +11,7 @@ var chopLetterTestResults = []struct {
 } {
     {
         argument: "a",
-        expected: {
+        expected: []chopped{
             {
                 head: "a",
                 tail: "",
@@ -20,7 +20,7 @@ var chopLetterTestResults = []struct {
     },
     {
         argument: "ab",
-        expected: {
+        expected: []chopped{
             {
                 head: "a",
                 tail: "b",
@@ -33,7 +33,7 @@ var chopLetterTestResults = []struct {
     },
     {
         argument: "abc",
-        expected: {
+        expected: []chopped{
             {
                 head: "a",
                 tail: "bc",
