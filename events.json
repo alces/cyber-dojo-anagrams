@@ -443,5 +443,21 @@
       1,
       281456
     ]
+  },
+  {
+    "duration": 0.676462,
+    "colour": "red",
+    "predicted": "amber",
+    "revert_if_wrong": "off",
+    "index": 28,
+    "time": [
+      2024,
+      5,
+      23,
+      10,
+      7,
+      58,
+      558100
+    ]
   }
 ]
