@@ -8,3 +8,7 @@ import (
 func TestAnagramsEmptyString(t *testing.T) {
     assert.Equal(t, []string{}, anagrams(""))
 }
+
+func TestAnagramsOneChar(t *testing.T) {
+    assert.Equal(t, []string{"a"}, anagrams("a"))
+}
