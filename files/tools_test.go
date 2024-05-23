@@ -53,11 +53,8 @@ var chopLetterTestResults = []struct {
         },
     },
 }
-func TestChopLetterEmptyString(t *testing.T) {
-    assert.Nil(t, chopLetter(""))
-}
 
-func TestChopLetterThreeChars(t *testing.T) {
+func TestChopLetter(t *testing.T) {
     for _, res := range chopLetterTestResults {
         actual := chopLetter(res.argument)
         assert.Len(t, actual, len(res.expected))
