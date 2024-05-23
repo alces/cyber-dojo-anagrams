@@ -1,2 +1,20 @@
-PASS
-ok  	_/sandbox	0.002s
+--- FAIL: TestConcatSlicesOneItem (0.00s)
+    tools_test.go:74: 
+        	Error Trace:	tools_test.go:74
+        	Error:      	Not equal: 
+        	            	expected: []string{"a"}
+        	            	actual  : []string(nil)
+        	            	
+        	            	Diff:
+        	            	--- Expected
+        	            	+++ Actual
+        	            	@@ -1,4 +1,2 @@
+        	            	-([]string) (len=1) {
+        	            	- (string) (len=1) "a"
+        	            	-}
+        	            	+([]string) <nil>
+        	            	 
+        	Test:       	TestConcatSlicesOneItem
+FAIL
+exit status 1
+FAIL	_/sandbox	0.008s

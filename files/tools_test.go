@@ -68,3 +68,9 @@ func TestConcatSlicesEmpty(t *testing.T) {
     assert.Nil(t, concatSlices([]string{}, []string{})) 
 }
 
+func TestConcatSlicesOneItem(t *testing.T) {
+    expected := []string{"a"}
+
+    assert.Equal(t, expected, concatSlices([]string{"a"}, []string{})) 
+}
+
