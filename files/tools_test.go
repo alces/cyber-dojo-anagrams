@@ -8,7 +8,7 @@ import (
 var chopLetterTestResults []struct {
     argument string
     expected []chopped
-} {
+} = {
     {
         argument: "a",
         expected: {

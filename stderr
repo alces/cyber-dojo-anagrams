@@ -1,2 +1,2 @@
 # _/sandbox
-tools_test.go:11:3: expected ';', found '{'
+tools_test.go:11:5: expected operand, found '{'
