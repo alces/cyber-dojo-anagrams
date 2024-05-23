@@ -14,5 +14,11 @@ func chopLetter(word string) (result []chopped) {
 }
 
 func concatSlices(first, second []string) (result []string) {
+    for _, f := range first {
+        for _, s := range second {
+            result = append(result, f+s)
+        }
+    }
+   
     return
 }
