@@ -1,2 +1,0 @@
-# _/sandbox [_/sandbox.test]
-./tools_test.go:36:22: cannot use actual (variable of type []chopped) as type int in argument to assert.Len

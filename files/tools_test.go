@@ -33,7 +33,7 @@ func TestChopLetterTwoChars(t *testing.T) {
     }
     
     actual := chopLetter("ab")
-    assert.Len(t, 2, actual)
+    assert.Len(t, actual, 2)
     
     for _, e := range expected {
         assert.Contains(t, e, actual)

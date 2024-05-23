@@ -1,1 +1,16 @@
-FAIL	_/sandbox [build failed]
+--- FAIL: TestChopLetterTwoChars (0.00s)
+    tools_test.go:36: 
+        	Error Trace:	tools_test.go:36
+        	Error:      	"[]" should have 2 item(s), but has 0
+        	Test:       	TestChopLetterTwoChars
+    tools_test.go:39: 
+        	Error Trace:	tools_test.go:39
+        	Error:      	anagrams.chopped{head:"a", tail:"b"} could not be applied builtin len()
+        	Test:       	TestChopLetterTwoChars
+    tools_test.go:39: 
+        	Error Trace:	tools_test.go:39
+        	Error:      	anagrams.chopped{head:"b", tail:"a"} could not be applied builtin len()
+        	Test:       	TestChopLetterTwoChars
+FAIL
+exit status 1
+FAIL	_/sandbox	0.003s
