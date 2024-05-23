@@ -12,3 +12,7 @@ func chopLetter(word string) (result []chopped) {
 
     return
 }
+
+func concatSlices(first, second []string) (result []string) {
+    return
+}

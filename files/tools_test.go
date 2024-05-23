@@ -63,3 +63,8 @@ func TestChopLetterThreeChars(t *testing.T) {
         assert.Contains(t, actual, e)
     }
 }
+
+func TestConcatSlicesEmpty(t *testing.T) {
+    assert.Nil(t, concatSlices([]string{}, []string{})) 
+}
+
