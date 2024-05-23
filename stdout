@@ -1,8 +1,2 @@
---- FAIL: TestChopLetterTwoChars (0.00s)
-    tools_test.go:39: 
-        	Error Trace:	tools_test.go:39
-        	Error:      	[]anagrams.chopped{anagrams.chopped{head:"a", tail:"b"}, anagrams.chopped{head:"a", tail:"a"}} does not contain anagrams.chopped{head:"b", tail:"a"}
-        	Test:       	TestChopLetterTwoChars
-FAIL
-exit status 1
-FAIL	_/sandbox	0.002s
+PASS
+ok  	_/sandbox	0.004s

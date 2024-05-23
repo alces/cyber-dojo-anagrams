@@ -17,7 +17,7 @@ func chopLetter(word string) (result []chopped) {
     result = append(result, chopped{head: string(word[0]), tail: word[1:]})
     
     for i := 1; i < len(word); i++ {
-        result = append(result, chopped{head: string(word[0]), tail: word[:i] + word[i+1:]})
+        result = append(result, chopped{head: string(word[i]), tail: word[:i] + word[i+1:]})
     }    
 
     return
