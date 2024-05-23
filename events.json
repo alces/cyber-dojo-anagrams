@@ -475,5 +475,21 @@
       17,
       442322
     ]
+  },
+  {
+    "duration": 3.950914,
+    "colour": "amber",
+    "predicted": "red",
+    "revert_if_wrong": "off",
+    "index": 30,
+    "time": [
+      2024,
+      5,
+      23,
+      10,
+      10,
+      41,
+      813658
+    ]
   }
 ]

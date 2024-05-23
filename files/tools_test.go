@@ -5,10 +5,10 @@ import (
     "github.com/stretchr/testify/assert"
 )
 
-var chopLetterTestResults []struct {
+var chopLetterTestResults = []struct {
     argument string
     expected []chopped
-} = {
+} {
     {
         argument: "a",
         expected: {
