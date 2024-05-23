@@ -1,2 +1,0 @@
-# _/sandbox [_/sandbox.test]
-./tools_test.go:62:36: res.actual undefined (type struct{argument string; expected []chopped} has no field or method actual)

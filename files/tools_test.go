@@ -59,7 +59,7 @@ func TestChopLetterThreeChars(t *testing.T) {
         assert.Len(t, actual, len(res.expected))
     
         for _, e := range res.expected {
-            assert.Contains(t, res.actual, e)
+            assert.Contains(t, actual, e)
         }
     }
 }
