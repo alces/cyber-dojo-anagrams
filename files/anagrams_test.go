@@ -19,11 +19,53 @@ var anagramsTestResults = []struct {
     },
 }
 
+var chopLetterTestResults = []struct {
+    argument string
+    expected []chopped
+} {
+    {
+        argument: "",
+        expected: nil,
+    },
+    {
+        argument: "a",
+        expected: []chopped{
+            {"a", ""},
+        },
+    },
+    {
+        argument: "ab",
+        expected: []chopped{
+            {"a", "b"},
+            {"b", "a"},
+        },
+    },
+    {
+        argument: "abc",
+        expected: []chopped{
+            {"a", "bc"},
+            {"b", "ac"},
+            {"c", "ab"},
+        },
+    },
+}
+
 func TestAnagrams(t *testing.T) {
     for _, res := range anagramsTestResults {
         actual := anagrams(res.argument)
         assert.Len(t, actual, len(res.expected))
         
+        for _, e := range res.expected {
+            assert.Contains(t, actual, e)
+        }
+    }
+}
+
+func TestChopLetter(t *testing.T) {
+    for _, res := range chopLetterTestResults {
+        actual := chopLetter(res.argument)
+        assert.Len(t, actual, len(res.expected))
+    
         for _, e := range res.expected {
             assert.Contains(t, actual, e)
         }
