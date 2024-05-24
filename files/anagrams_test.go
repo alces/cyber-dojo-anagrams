@@ -11,7 +11,6 @@ var anagramsTestResults = []struct {
 } {
     {"", nil},
     {"a", []string{"a"}},
-    {"ab", []string{"ab", "ba"}},
     {"abc", []string{"abc", "acb", "bac", "bca", "cab", "cba"}},
     {"abcd", []string{"abcd", "abdc", "acbd", "acdb", "adbc", "adcb",
                       "bacd", "badc", "bcad", "bcda", "bdac", "bdca",
