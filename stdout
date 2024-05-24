@@ -1,2 +1,20 @@
-PASS
-ok  	_/sandbox	0.002s
+--- FAIL: TestAnagrams (0.00s)
+    anagrams_test.go:21: 
+        	Error Trace:	anagrams_test.go:21
+        	Error:      	"[abc bac cab]" should have 6 item(s), but has 3
+        	Test:       	TestAnagrams
+    anagrams_test.go:24: 
+        	Error Trace:	anagrams_test.go:24
+        	Error:      	[]string{"abc", "bac", "cab"} does not contain "acb"
+        	Test:       	TestAnagrams
+    anagrams_test.go:24: 
+        	Error Trace:	anagrams_test.go:24
+        	Error:      	[]string{"abc", "bac", "cab"} does not contain "bca"
+        	Test:       	TestAnagrams
+    anagrams_test.go:24: 
+        	Error Trace:	anagrams_test.go:24
+        	Error:      	[]string{"abc", "bac", "cab"} does not contain "cba"
+        	Test:       	TestAnagrams
+FAIL
+exit status 1
+FAIL	_/sandbox	0.002s
