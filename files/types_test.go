@@ -19,6 +19,7 @@ func TestStringSetKeys(t *testing.T) {
     ss.add("bcd")
     
     keys := ss.keys()
+    assert.Len(t, keys, len(ss))
     assert.Contains(t, keys, "abc")
     assert.Contains(t, keys, "bcd")
 }
