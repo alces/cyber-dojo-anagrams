@@ -5,14 +5,22 @@ import (
     "github.com/stretchr/testify/assert"
 )
 
-func TestAnagramsEmptyString(t *testing.T) {
-    assert.Nil(t, anagrams(""))
+var anagramsTestResults = []struct {
+    argument string
+    expected []string
+} {
+    {"", nil},
+    {"a", []string{"a"}},
+    {"ab", []string{"ab", "ba"}},
 }
 
-func TestAnagramsOneChar(t *testing.T) {
-    assert.Equal(t, []string{"a"}, anagrams("a"))
-}
-
-func TestAnagramsTwoChars(t *testing.T) {
-    assert.Equal(t, []string{"ab", "ba"}, anagrams("ab"))
+func TestAnagrams(t *testing.T) {
+    for _, res := range anagramsTestResults {
+        actual := anagrams(res.argument)
+        assert.Len(t, actual, len(res.expected))
+        
+        for _, e := range res.expected {
+            assert.Contains(t, actual, e)
+        }
+    }
 }
