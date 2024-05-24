@@ -1,8 +1,2 @@
---- FAIL: TestStringSetKeys (0.00s)
-    types_test.go:22: 
-        	Error Trace:	types_test.go:22
-        	Error:      	[]string{} does not contain "abc"
-        	Test:       	TestStringSetKeys
-FAIL
-exit status 1
-FAIL	_/sandbox	0.002s
+PASS
+ok  	_/sandbox	0.002s

@@ -13,5 +13,11 @@ func (ss stringSet) add(word string) {
 }
 
 func (ss stringSet) keys() []string {
-    return []string{}
+    result := make([]string, 0, len(ss))
+    
+    for k := range ss {
+        result = append(result, k)
+    }
+    
+    return result
 }
