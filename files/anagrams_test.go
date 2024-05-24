@@ -12,3 +12,7 @@ func TestAnagramsEmptyString(t *testing.T) {
 func TestAnagramsOneChar(t *testing.T) {
     assert.Equal(t, []string{"a"}, anagrams("a"))
 }
+
+func TestAnagramsTwoChars(t *testing.T) {
+    assert.Equal(t, []string{"ab", "ba"}, anagrams("ab"))
+}

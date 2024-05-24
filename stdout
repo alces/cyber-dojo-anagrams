@@ -1,2 +1,21 @@
-PASS
-ok  	_/sandbox	0.002s
+--- FAIL: TestAnagramsTwoChars (0.00s)
+    anagrams_test.go:17: 
+        	Error Trace:	anagrams_test.go:17
+        	Error:      	Not equal: 
+        	            	expected: []string{"ab", "ba"}
+        	            	actual  : []string(nil)
+        	            	
+        	            	Diff:
+        	            	--- Expected
+        	            	+++ Actual
+        	            	@@ -1,5 +1,2 @@
+        	            	-([]string) (len=2) {
+        	            	- (string) (len=2) "ab",
+        	            	- (string) (len=2) "ba"
+        	            	-}
+        	            	+([]string) <nil>
+        	            	 
+        	Test:       	TestAnagramsTwoChars
+FAIL
+exit status 1
+FAIL	_/sandbox	0.004s
