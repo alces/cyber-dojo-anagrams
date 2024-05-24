@@ -10,4 +10,5 @@ func TestStringSetAdd(t *testing.T) {
     ss.add("abc")
     
     assert.Len(t, ss, 1)
+    assert.Contains(t, ss, "abc")
 }
