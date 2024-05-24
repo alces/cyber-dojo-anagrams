@@ -13,6 +13,10 @@ var anagramsTestResults = []struct {
     {"a", []string{"a"}},
     {"ab", []string{"ab", "ba"}},
     {"abc", []string{"abc", "acb", "bac", "bca", "cab", "cba"}},
+    {"abcd", []string{"abcd", "abdc", "acbd", "acdb", "adbc", "adcb",
+                      "bacd", "badc", "bcad", "bcda", "bdac", "bdca",
+                      "cabd", "cadb", "cbad", "cbda", "cdab", "cdba",
+                      "dacb", "dabc", "dbac", "dbca", "dcab", "dcba"},
 }
 
 func TestAnagrams(t *testing.T) {
