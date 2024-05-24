@@ -10,7 +10,9 @@ func anagrams(word string) (result []string) {
     }
     
     for _, c := range chopLetter(word) {
-        result = append(result, c.head + c.tail)
+        for _, t := range(anagrams(c.tail)) {
+            result = append(result, c.head + t)
+        }
     }    
     
     return
