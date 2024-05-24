@@ -17,6 +17,7 @@ var anagramsTestResults = []struct {
                       "bacd", "badc", "bcad", "bcda", "bdac", "bdca",
                       "cabd", "cadb", "cbad", "cbda", "cdab", "cdba",
                       "dacb", "dabc", "dbac", "dbca", "dcab", "dcba"},
+    },
 }
 
 func TestAnagrams(t *testing.T) {

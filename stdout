@@ -1,1 +1,2 @@
-FAIL	_/sandbox [setup failed]
+PASS
+ok  	_/sandbox	0.002s
