@@ -1,8 +1,2 @@
---- FAIL: TestStringSetAdd (0.00s)
-    types_test.go:12: 
-        	Error Trace:	types_test.go:12
-        	Error:      	"map[]" should have 1 item(s), but has 0
-        	Test:       	TestStringSetAdd
-FAIL
-exit status 1
-FAIL	_/sandbox	0.002s
+PASS
+ok  	_/sandbox	0.003s

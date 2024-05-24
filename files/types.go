@@ -8,5 +8,6 @@ type chopped struct {
 type stringSet map[string]struct{}
 
 func (ss stringSet) add(word string) {
-     return   
+    var value struct{}
+    ss[word] = value
 }    
