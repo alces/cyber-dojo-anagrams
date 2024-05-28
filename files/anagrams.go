@@ -1,20 +1,22 @@
 package anagrams
 
-func anagrams(word string) (result []string) {
+func anagrams(word string) []string {
     if len(word) == 1 {
         return []string{word}
     }
     
+    result := stringSet{}
+    
     for _, c := range chopLetter(word) {
         for _, t := range(anagrams(c.tail)) {
-            result = append(result, c.head + t)
+            result.add(c.head + t)
         }
     }    
     
-    return
+    return result.toSlice()
 }
 
-func chopLetter(word string) (result []chopped) { 
+func chopLetter(word string) (result []chopped) {
     for i := 0; i < len(word); i++ {
         result = append(result, chopped{string(word[i]), word[:i] + word[i+1:]})
     }    

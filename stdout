@@ -1,8 +1,2 @@
---- FAIL: TestAnagrams (0.00s)
-    anagrams_test.go:57: 
-        	Error Trace:	anagrams_test.go:57
-        	Error:      	"[abba abab abba abab aabb aabb baba baab bbaa bbaa baab baba baba baab bbaa bbaa baab baba aabb aabb abab abba abab abba]" should have 6 item(s), but has 24
-        	Test:       	TestAnagrams
-FAIL
-exit status 1
-FAIL	_/sandbox	0.002s
+PASS
+ok  	_/sandbox	0.006s
