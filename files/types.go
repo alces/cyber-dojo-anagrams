@@ -12,7 +12,7 @@ func (ss stringSet) add(word string) {
     ss[word] = value
 }
 
-func (ss stringSet) keys() []string {
+func (ss stringSet) toSlice() []string {
     result := make([]string, 0, len(ss))
     
     for k := range ss {

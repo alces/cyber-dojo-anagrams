@@ -13,12 +13,12 @@ func TestStringSetAdd(t *testing.T) {
     assert.Contains(t, ss, "abc")
 }
 
-func TestStringSetKeys(t *testing.T) {
+func TestStringSetToSlice(t *testing.T) {
     ss := stringSet{}
     ss.add("abc")
     ss.add("bcd")
     
-    keys := ss.keys()
+    keys := ss.toSlice()
     assert.Len(t, keys, len(ss))
     assert.Contains(t, keys, "abc")
     assert.Contains(t, keys, "bcd")
