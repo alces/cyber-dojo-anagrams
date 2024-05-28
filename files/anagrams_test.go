@@ -17,6 +17,7 @@ var anagramsTestResults = []struct {
                       "cabd", "cadb", "cbad", "cbda", "cdab", "cdba",
                       "dacb", "dabc", "dbac", "dbca", "dcab", "dcba"},
     },
+    {"abba", []string{"aabb", "abba", "abab", "baba", "baab", "bbaa"},},
 }
 
 var chopLetterTestResults = []struct {
